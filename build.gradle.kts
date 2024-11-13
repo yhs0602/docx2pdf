@@ -20,6 +20,15 @@ dependencies {
     // (in a separate module for demo project and in testMain).
     // With compose.desktop.common you will also lose @Preview functionality
     implementation(compose.desktop.currentOs)
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    implementation("org.apache.poi:poi:5.2.5")
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation("org.apache.poi:poi-ooxml:5.2.5")
+    // https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.poi.xwpf.converter.pdf
+    implementation("fr.opensagres.xdocreport:fr.opensagres.poi.xwpf.converter.pdf:2.0.6")
+    // https://mvnrepository.com/artifact/fr.opensagres.xdocreport/org.odftoolkit.odfdom.converter.pdf
+    implementation("fr.opensagres.xdocreport:org.odftoolkit.odfdom.converter.pdf:1.0.6")
+
 }
 
 compose.desktop {

@@ -9,6 +9,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import java.io.File
 
 @Composable
 @Preview
@@ -17,7 +18,9 @@ fun App() {
 
     MaterialTheme {
         Button(onClick = {
-            text = "Hello, Desktop!"
+            text = "Converting..."
+            docx2pdf(File("/Users/yanghyeonseo/gitprojects/docx2_pdf_root/sample.docx"))
+            text = "Converting done!"
         }) {
             Text(text)
         }
